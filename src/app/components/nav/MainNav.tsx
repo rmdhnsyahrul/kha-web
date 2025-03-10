@@ -1,19 +1,35 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
 import { PrimaryButton } from "../button";
 import { ChevronUp, Hamburger } from "../icons";
+
+const mainNav = [
+  ["Home", ""],
+  ["About", "about-us"],
+  ["Our Technology", "our-technology"],
+  ["Services", "our-services"],
+];
 
 export default function MainNav() {
   const [isActive, setIsActive] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const onScroll = useCallback(() => {
+    console.info(window.scrollY);
     if (window.scrollY > 120) {
       setIsActive(true);
+      if (window.scrollY > 688 && window.scrollY < 1460) {
+        setActiveSection("about-us");
+      } else if (window.scrollY > 1460 && window.scrollY < 3925) {
+        setActiveSection("our-technology");
+      } else if (window.scrollY > 3925) {
+        setActiveSection("our-services");
+      }
     } else {
       setIsActive(false);
+      setActiveSection("");
     }
   }, []);
 
@@ -23,7 +39,7 @@ export default function MainNav() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const pathname = usePathname();
+  const router = useRouter();
 
   const onPressMenu = useCallback(() => {
     setIsMenuOpen((prevState) => !prevState);
@@ -32,6 +48,12 @@ export default function MainNav() {
   /** Todo:
    * 1. close mobile menu after press menu
    */
+  const [activeSection, setActiveSection] = useState("");
+  const handleMenuPressed = useCallback((menu: string) => {
+    setActiveSection(menu);
+    onPressMenu();
+    router.replace(`#${menu}`);
+  }, []);
 
   return (
     <div
@@ -64,24 +86,20 @@ export default function MainNav() {
         <div className="menu justify-center items-center gap-6 hidden sm:flex">
           <nav>
             <ul className="flex gap-6 ps-[10px] text-[#323B60]">
-              <li
-                className={`py-2 ${
-                  pathname == "/"
-                    ? "border-b-[2px] border-[#323B60] font-bold"
-                    : "font-light"
-                }`}
-              >
-                <Link href={""}>Home</Link>
-              </li>
-              <li className="py-2 font-light">
-                <Link href={"#about-us"}>About</Link>
-              </li>
-              <li className="py-2 font-light">
-                <Link href={"#our-services"}>Our Technology</Link>
-              </li>
-              <li className="py-2 font-light">
-                <Link href={""}>Services</Link>
-              </li>
+              {mainNav.map(([label, url]) => (
+                <li
+                  className={`py-2 ${
+                    activeSection == url
+                      ? "border-b-[2px] border-[#323B60] font-bold"
+                      : "font-light"
+                  }`}
+                  key={label}
+                >
+                  <button onClick={() => handleMenuPressed(url)}>
+                    {label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </nav>
           <PrimaryButton>
@@ -115,24 +133,20 @@ export default function MainNav() {
           </div>
           <nav className="pt-8">
             <ul className="gap-6 ps-[10px] text-[#323B60]">
-              <li
-                className={`py-2 ${
-                  pathname == "/"
-                    ? "border-b-[2px] border-[#323B60] font-bold"
-                    : "font-light"
-                }`}
-              >
-                <Link href={""}>Home</Link>
-              </li>
-              <li className="py-2 font-light">
-                <Link href={"#about-us"}>About</Link>
-              </li>
-              <li className="py-2 font-light">
-                <Link href={"#our-services"}>Our Technology</Link>
-              </li>
-              <li className="py-2 font-light">
-                <Link href={""}>Services</Link>
-              </li>
+              {mainNav.map(([label, url]) => (
+                <li
+                  className={`py-2 ${
+                    activeSection == url
+                      ? "border-b-[2px] border-[#323B60] font-bold"
+                      : "font-light"
+                  }`}
+                  key={label}
+                >
+                  <button onClick={() => handleMenuPressed(url)}>
+                    {label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </nav>
           <div className="flex items-center justify-between p-4 pr-0">
@@ -143,7 +157,9 @@ export default function MainNav() {
               |<Link href={""}>ID</Link>
             </span>
             <PrimaryButton>
-              <Link href={"#contact-us"}>Request Demo</Link>
+              <button onClick={() => handleMenuPressed("contact-us")}>
+                Request Demo
+              </button>
             </PrimaryButton>
           </div>
         </div>

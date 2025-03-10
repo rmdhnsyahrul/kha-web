@@ -10,7 +10,6 @@ import OurTechnology from "./components/sections/OurTechnology";
 export default function Home() {
   return (
     <main>
-      {/* <Banner /> */}
       <HeroSection />
       <AboutUs />
       <OurTechnology />

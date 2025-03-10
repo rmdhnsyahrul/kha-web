@@ -6,7 +6,7 @@ import { PrimaryButton } from "../button";
 
 export default function ContactUs() {
   return (
-    <section className="p-5 sm:py-[64px] sm:px-[80px] bg-white">
+    <section className="p-5 sm:py-[64px] sm:px-[80px] bg-white" id="contact-us">
       <SectionTitle>Contact Us</SectionTitle>
       <div className="flex flex-col sm:flex-row gap-y-8">
         <div className="flex flex-col items-center justify-center text-primary-blue font-bold text-xl">
