@@ -15,23 +15,23 @@ export default function Faq() {
           ],
           [
             "What kind of digital solutions available for the mining industry?",
-            "Mining digitalization is the process of using the latest technology to increase efficiency and productivity throughout the mining cycle, from exploration and development, through production, to delivery and marketing.",
+            "There are many digital solutions available for the mining industry, such as automation and control technology, IoT, AI and data analysis, cloud computing, and supply chain management systems. PT. KHA Data Indonesia has the resources to help you implement digital solutions for your day-to-day mining oprations.",
           ],
           [
             "Why is mine digitalization important for the industry and the economy?",
-            "Mining digitalization is the process of using the latest technology to increase efficiency and productivity throughout the mining cycle, from exploration and development, through production, to delivery and marketing.",
+            "Digitalization helps increase efficiency, reduce costs and minimize risks in mining operations. Apart from that, digitalization also helps mining businesses prepare for an increasingly digital and interconnected future.",
           ],
           [
             "How to implement digital solution for mining operations?",
-            "Mining digitalization is the process of using the latest technology to increase efficiency and productivity throughout the mining cycle, from exploration and development, through production, to delivery and marketing.",
+            "Implementing digital solutions for mining requires a mature strategy and careful planning. Mining companies must identify their business needs, evaluate available technologies, and select the most appropriate solutions. PT. KHA Data Indonesia will provide consulting and advisory services for you to help train staff and implement digital solution for your mining operations.",
           ],
           [
             "What is the benefit of mine digitalization in day-to-day operations?",
-            "Mining digitalization is the process of using the latest technology to increase efficiency and productivity throughout the mining cycle, from exploration and development, through production, to delivery and marketing.",
+            "The benefits of mining digitalization in day-to-day operations include increasing efficiency and productivity, reducing costs, improving occupational safety and health, and minimizing risks in mining operations. Digitalization also helps increase customer satisfaction and strengthen the company's position in the market.",
           ],
           [
             "How can I know more about PT KHA Data Indonesia cloudbased mining management systems?",
-            "Mining digitalization is the process of using the latest technology to increase efficiency and productivity throughout the mining cycle, from exploration and development, through production, to delivery and marketing.",
+            "Please contact us using the form below and we would be more than happy to customize a solution for you and your mining operations.",
           ],
         ].map(([question, answer], index) => (
           <Accordion question={question} answer={answer} key={index} />
