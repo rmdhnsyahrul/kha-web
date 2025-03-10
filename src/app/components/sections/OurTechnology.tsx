@@ -39,7 +39,7 @@ export default function OurTechnology() {
             >
               {index % 2 === 0 ? (
                 <>
-                  <div className="col-span-3 sm:col-1">
+                  <div className="col-span-3 sm:col-span-1">
                     <div className="relative">
                       <Image
                         src={imageUrl}
@@ -82,7 +82,7 @@ export default function OurTechnology() {
                       {description}
                     </p>
                   </div>
-                  <div className="hidden sm:col-1">
+                  <div className="hidden sm:block sm:col-1">
                     <div className="relative">
                       <Image
                         src={imageUrl}
