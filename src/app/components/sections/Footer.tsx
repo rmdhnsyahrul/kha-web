@@ -7,34 +7,38 @@ export default function Footer() {
     <section id="footer">
       <div className="bg-[#F6F6F6] flex flex-col gap-y-8 sm:flex-row items-center justify-between py-4 px-10">
         <Image
-          src={"/images/kha-logo2x.png"}
+          src={"./images/kha-logo2x.png"}
           alt="kha mine management system"
           width={237}
           height={62}
+          unoptimized
         />
         <div className="grid grid-flow-col text-primary-blue gap-x-[28px]">
           <Link href="">
             <Image
-              src={"/images/linkedin.svg"}
+              src={"./images/linkedin.svg"}
               alt="Instagram - kha mine management system"
               width={32}
               height={33}
+              unoptimized
             />
           </Link>
           <Link href="">
             <Image
-              src={"/images/facebook.svg"}
+              src={"./images/facebook.svg"}
               alt="Facebook - kha mine management system"
               width={32}
               height={33}
+              unoptimized
             />
           </Link>
           <Link href="">
             <Image
-              src={"/images/instagram.svg"}
+              src={"./images/instagram.svg"}
               alt="Linkedin - kha mine management system"
               width={32}
               height={33}
+              unoptimized
             />
           </Link>
         </div>

@@ -18,7 +18,9 @@ export default function TechCard({
         secondary ? "bg-primary-grey" : "bg-primary-blue"
       }`}
     >
-      {icon && <Image src={icon} width={32} height={32} alt={title} />}
+      {icon && (
+        <Image src={icon} width={32} height={32} alt={title} unoptimized />
+      )}
       {title && (
         <h2
           className={`font-bold py-4 text-2xl ${

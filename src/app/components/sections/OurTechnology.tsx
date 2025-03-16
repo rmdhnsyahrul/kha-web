@@ -15,22 +15,22 @@ export default function OurTechnology() {
             [
               "GPS Monitoring and Tracking",
               "We provide cutting-edge GPS monitoring and tracking features within our mine management platform to revolutionize your mining operations. Our advanced system offers real-time mapping of the mine pit, overburden removal locations, and the routes connecting these critical areas. With precise tracking of equipment and personnel movements, you can ensure all activities are seamlessly recorded and monitored. Our platform's comprehensive mapping capabilities enable optimal route planning and resource allocation, minimizing operational delays and reducing fuel consumption.",
-              "/images/gps-tracking.jpg",
+              "./images/gps-tracking.jpg",
             ],
             [
               "Fleet Management System",
               "We provide a state-of-the-art fleet management system that revolutionizes how you monitor and optimize your mining operations. Our cutting-edge solution tracks the performance of trucks, excavators, and other mining equipment throughout the entire mining supply chain. By leveraging advanced GPS technology and real-time data analytics, our system ensures that every piece of equipment is operating at peak efficiency. Monitor fuel consumption, equipment utilization, and maintenance schedules to reduce downtime and increase productivity. Our comprehensive tracking and reporting features empower you with the insights needed to make informed decisions, streamline operations, and enhance overall safety.",
-              "/images/monitoring.jpg",
+              "./images/monitoring.jpg",
             ],
             [
               "Integrated Dashboard for Benchmarking",
               "We provide an integrated dashboard for benchmarking mining activities, allowing you to seamlessly compare actual mining results with the planning activities listed in the Rencana Kerja dan Anggaran Belanja (RKAB). Our sophisticated system gathers data from various mining operations and compiles it into a user-friendly interface. This enables you to track progress, identify discrepancies, and ensure adherence to planned schedules and budgets. By offering real-time insights and comprehensive analytics, our dashboard empowers you to make data-driven decisions, optimize resource allocation, and enhance overall operational efficiency.",
-              "/images/integrated.jpg",
+              "./images/integrated.jpg",
             ],
             [
               "Fuel Monitoring",
               "We provide an advanced fuel monitoring system designed to track and optimize fuel usage across various mining equipment used in overburden removals and hauling. Our system offers real-time monitoring and detailed analytics for a range of machinery, including trucks, excavators, bulldozers, and loaders. By leveraging cutting-edge technology, our fuel monitoring system enables you to identify inefficiencies, reduce fuel consumption, and minimize costs. With comprehensive reporting and data visualization, you gain valuable insights into fuel usage patterns, allowing for more informed decision-making and improved operational efficiency.",
-              "/images/monitoring.jpg",
+              "./images/monitoring.jpg",
             ],
           ].map(([title, description, imageUrl], index) => (
             <div
@@ -47,6 +47,7 @@ export default function OurTechnology() {
                         height={323}
                         className="rounded-[32px] w-full h-auto"
                         alt="gps monitoring and tracking"
+                        unoptimized
                       />
                       <div className="image-bg-tech left" />
                     </div>
@@ -70,6 +71,7 @@ export default function OurTechnology() {
                         height={323}
                         className="rounded-[32px] w-full h-auto"
                         alt="gps monitoring and tracking"
+                        unoptimized
                       />
                       <div className="image-bg-tech left" />
                     </div>
@@ -90,6 +92,7 @@ export default function OurTechnology() {
                         height={323}
                         className="rounded-[32px] w-full h-auto"
                         alt="gps monitoring and tracking"
+                        unoptimized
                       />
                       <div className="image-bg-tech left" />
                     </div>
@@ -106,27 +109,27 @@ export default function OurTechnology() {
             [
               "Smart Data Analysis",
               "We provide intelligent and detailed data analysis services to ensure optimal and efficient mine performance.",
-              "/images/gps-tracking.jpg",
+              "./images/gps-tracking.jpg",
             ],
             [
               "Mine Digitalization",
               "Our services include access to our proprietary cloud computing software where clients would have access to their operations-related data anytime, anywhere, and from any device.",
-              "/images/monitoring.jpg",
+              "./images/monitoring.jpg",
             ],
             [
               "Around-the-Clock Service",
               "We provide fast and responsive service, so you can get the support you need easily and without a hitch.",
-              "/images/gps-tracking.jpg",
+              "./images/gps-tracking.jpg",
             ],
             [
               "Effective Monitoring",
               "Our services provide effective end-to-end mine monitoring to ensure that all operations run smoothly and without interruption.",
-              "/images/monitoring.jpg",
+              "./images/monitoring.jpg",
             ],
             [
               "Expert IT Support",
               "With a team of reliable and experienced IT experts, we offer the latest technology solutions that are appropriate and effective for all mine monitoring problems.",
-              "/images/integrated.jpg",
+              "./images/integrated.jpg",
             ],
           ].map(([title, description, url]) => (
             <div
@@ -139,6 +142,7 @@ export default function OurTechnology() {
                 src={url}
                 className="h-auto w-full object-cover rounded-[32px] relative"
                 alt={title}
+                unoptimized
               />
               <div className="absolute inset-0 bg-gradient-to-b from-[#323b6080] to-[#323B60] z-1 rounded-[32px] flex flex-col justify-end p-6">
                 <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>

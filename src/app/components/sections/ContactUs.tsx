@@ -11,11 +11,12 @@ export default function ContactUs() {
       <div className="flex flex-col sm:flex-row gap-y-8">
         <div className="flex flex-col items-center justify-center text-primary-blue font-bold text-xl">
           <Image
-            src={"/images/kha-potrait-4x.png"}
+            src={"./images/kha-potrait-4x.png"}
             width={100}
             height={100}
             alt=""
             className="w-full h-[300px] object-contain"
+            unoptimized
           />
           <h3 className="text-center px-6">
             If you are interested in our product and want to request demo
@@ -41,18 +42,20 @@ export default function ContactUs() {
       </div>
       <div className="flex justify-between mt-8">
         <Image
-          src={"/images/dot-corner-5x5-blue.svg"}
+          src={"./images/dot-corner-5x5-blue.svg"}
           width={100}
           height={100}
           alt=""
           className="w-8 h-8 sm:w-[88px] sm:h-[88px]"
+          unoptimized
         />
         <Image
-          src={"/images/dot-corner-5x5-blue.svg"}
+          src={"./images/dot-corner-5x5-blue.svg"}
           width={100}
           height={100}
           alt=""
           className="-rotate-90 w-8 h-8 sm:w-[88px] sm:h-[88px]"
+          unoptimized
         />
       </div>
     </section>

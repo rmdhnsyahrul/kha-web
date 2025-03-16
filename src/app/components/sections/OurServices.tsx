@@ -14,27 +14,30 @@ export default function OurServices() {
         <div className="flex flex-row gap-[33px] animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
           <div className="flex flex-col justify-between animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] delay-75">
             <Image
-              src={"/images/dot-corner-5x5.png"}
+              src={"./images/dot-corner-5x5.png"}
               width={88}
               height={88}
               alt=""
               className="-rotate-90"
+              unoptimized
             />
             <Image
-              src={"/images/dot-corner-5x5.png"}
+              src={"./images/dot-corner-5x5.png"}
               width={88}
               height={88}
               alt=""
               className="-rotate-180"
+              unoptimized
             />
           </div>
           <div className="flex-1">
             <Image
-              src={"/images/our-services.jpg"}
+              src={"./images/our-services.jpg"}
               width={505}
               height={558}
               className="w-full h-[500px] object-cover rounded-[40px] animate-slide-in-right [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] delay-100"
               alt="about kha data Indonesia - kha mine management system"
+              unoptimized
             />
           </div>
         </div>
@@ -43,27 +46,27 @@ export default function OurServices() {
         <div className="grid grid-flow-row sm:grid-cols-5 gap-6">
           {[
             [
-              "/images/ic-on-specs.svg",
+              "./images/ic-on-specs.svg",
               "On Specs",
               "With real-time tracking, our clients will be able to evaluate the specifications of mining production results",
             ],
             [
-              "/images/ic-on-stock.svg",
+              "./images/ic-on-stock.svg",
               "On Stock",
               "Our cloud-based systems will enable our clients to properly estimate mining reserves at any given time.",
             ],
             [
-              "/images/ic-on-schedule.svg",
+              "./images/ic-on-schedule.svg",
               "On Schedule",
               "Through our integrated systems, our clients will be track the delivery of the mining products across the value chain.",
             ],
             [
-              "/images/ic-on-budget.svg",
+              "./images/ic-on-budget.svg",
               "On Budget",
               "Through our customizable financial models, our clients will be able to accurately estimate fuel, labor and other miningrelated costs to control their budget.",
             ],
             [
-              "/images/ic-on-efficient-use.svg",
+              "./images/ic-on-efficient-use.svg",
               "Efficient Use of Labor and Equipment",
               "Our cloud-based systems will enable our clients to make datadriven decisions on labor and equipment needed for mining production and transportation.",
             ],
@@ -86,18 +89,20 @@ export default function OurServices() {
 
       <div className="flex justify-between px-5 sm:px-[80px]">
         <Image
-          src={"/images/dot-corner-5x5.png"}
+          src={"./images/dot-corner-5x5.png"}
           width={88}
           height={88}
           alt=""
           className="rotate-180 w-8 h-8 sm:w-[88px] sm:h-[88px]"
+          unoptimized
         />
         <Image
-          src={"/images/dot-corner-5x5.png"}
+          src={"./images/dot-corner-5x5.png"}
           width={88}
           height={88}
           alt=""
           className="rotate-90 w-8 h-8 sm:w-[88px] sm:h-[88px]"
+          unoptimized
         />
       </div>
     </section>

@@ -36,25 +36,28 @@ export default function AboutUs() {
         <div className="sm:w-1/2 sm:block hidden">
           <div className="flex flex-row gap-[33px]">
             <Image
-              src={"/images/about-us.jpg"}
+              src={"./images/about-us.jpg"}
               width={505}
               height={558}
               className="rounded-[40px] animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] z-10"
               alt="about kha data Indonesia - kha mine management system"
+              unoptimized
             />
             <div className="flex flex-col justify-between">
               <Image
-                src={"/images/dot-corner-5x5.png"}
+                src={"./images/dot-corner-5x5.png"}
                 width={88}
                 height={88}
                 alt=""
+                unoptimized
               />
               <Image
-                src={"/images/dot-corner-5x5.png"}
+                src={"./images/dot-corner-5x5.png"}
                 width={88}
                 height={88}
                 alt=""
                 className="rotate-90"
+                unoptimized
               />
             </div>
           </div>

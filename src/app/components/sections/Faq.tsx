@@ -39,18 +39,20 @@ export default function Faq() {
       </section>
       <div className="flex justify-between mt-8">
         <Image
-          src={"/images/dot-corner-5x5-blue.svg"}
+          src={"./images/dot-corner-5x5-blue.svg"}
           width={100}
           height={100}
           alt=""
           className="w-8 h-8 sm:w-[88px] sm:h-[88px]"
+          unoptimized
         />
         <Image
-          src={"/images/dot-corner-5x5-blue.svg"}
+          src={"./images/dot-corner-5x5-blue.svg"}
           width={100}
           height={100}
           alt=""
           className="-rotate-90 w-8 h-8 sm:w-[88px] sm:h-[88px]"
+          unoptimized
         />
       </div>
     </section>

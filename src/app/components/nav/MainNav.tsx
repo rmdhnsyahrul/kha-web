@@ -75,11 +75,12 @@ export default function MainNav() {
           </button>
           <div className="logo">
             <Image
-              src={"/images/kha-logo2x.png"}
+              src={"./images/kha-logo2x.png"}
               alt="kha mine management system"
               width={275}
               height={72}
               className="w-[177px] h-47px sm:w-[275px] sm:h-[72px]"
+              unoptimized
             />
           </div>
         </div>
