@@ -12,23 +12,23 @@ export default function MiningSimplefied() {
           // fill
           width={1000}
           height={342}
-          className="w-full h-[342] object-center"
+          className="w-full h-[342] object-center animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
           alt=""
         />
         {/* <div className="absolute inset-0 w-full h-[342] z-1 bg-[#000000BF] opacity-5" /> */}
       </div>
       <section className="p-5 sm:py-[64px] sm:px-[80px]" id="our-technology">
         <SectionTitle>Mining Simplified</SectionTitle>
-        <div className="px-0 sm:px-[62px] sm:visible hidden">
+        <div className="px-0 sm:px-[62px] sm:block hidden">
           <div className="grid sm:grid-cols-3 grid-flow-col">
-            <div className="hidden sm:col-1">&nbsp;</div>
+            <div className="col-1">&nbsp;</div>
             <TechCard
               icon="/images/ic-cloud-based.svg"
               title="Cloud-Based Technology"
               description="Our cloud-based systems allow you to access critical data such as production, equipment health and personnel safety, so you can make informed decisions and improve overall efficiency."
               secondary
             />
-            <div className="hidden sm:col-1">&nbsp;</div>
+            <div className="col-1">&nbsp;</div>
           </div>
           <div className="grid sm:grid-cols-3 grid-flow-col">
             <TechCard
@@ -52,14 +52,14 @@ export default function MiningSimplefied() {
             />
           </div>
           <div className="grid sm:grid-cols-3 grid-flow-col">
-            <div className="hidden sm:col-1">&nbsp;</div>
+            <div className="col-1">&nbsp;</div>
             <TechCard
               icon="/images/ic-cost-effective.svg"
               title="Cost-Effective"
               description="Our solutions are designed to provide maximum value for your investment. Our effective monitoring system helps you reduce operational costs, minimize downtime and increase productivity"
               secondary
             />
-            <div className="hidden sm:col-1">&nbsp;</div>
+            <div className="col-1">&nbsp;</div>
           </div>
         </div>
 
@@ -115,7 +115,7 @@ export default function MiningSimplefied() {
         </div>
       </section>
       <section className="p-5 sm:py-[64px] sm:px-[80px]">
-        <h1 className="text-3xl sm:text-[60px]/[72px] sm:px-[145px] text-primary-blue font-bold text-center">
+        <h1 className="text-3xl sm:text-[60px]/[72px] sm:px-[145px] text-primary-blue font-bold text-center animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
           Integrated Data-Driven Insights Across Value Chain
         </h1>
         <div className="grid sm:grid-cols-3 grid-flow-row gap-6 py-[34px]">

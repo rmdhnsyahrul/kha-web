@@ -1,4 +1,3 @@
-import Banner from "./components/banner/Banner";
 import HeroSection from "./components/banner/HeroSection";
 import AboutUs from "./components/sections/AboutUs";
 import ContactUs from "./components/sections/ContactUs";

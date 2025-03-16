@@ -25,7 +25,7 @@ export default function ContactUs() {
         <form
           action="#"
           method="POST"
-          className="mx-auto w-full max-w-xl sm:mt-20 "
+          className="mx-auto w-full max-w-xl sm:mt-20 animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-4 mb-6">
             <Input label="Name" required id="customer-name" />
@@ -34,7 +34,9 @@ export default function ContactUs() {
             <Input label="Job title" required id="job-title" />
             <Input label="Message" required id="message" />
           </div>
-          <PrimaryButton>Book a meeting</PrimaryButton>
+          <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
+            <PrimaryButton>Book a meeting</PrimaryButton>
+          </div>
         </form>
       </div>
       <div className="flex justify-between mt-8">

@@ -8,7 +8,7 @@ export default function AboutUs() {
   return (
     <section className="content bg-white sm:bg-partial-blue " id="about-us">
       <div className="flex flex-row p-5 sm:py-[70px] sm:px-[80px] gap-[81px]">
-        <div className="sm:w-1/2 w-full">
+        <section className="sm:w-1/2 w-full animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:400px] delay-300">
           <SectionTitle>About us</SectionTitle>
           <p className="pb-4 font-light text-lg mb-[40px]">
             PT. KHA Data Indonesia is an Indonesian registered company that
@@ -32,14 +32,14 @@ export default function AboutUs() {
           <PrimaryButton>
             <Link href={"#"}>Know More</Link>
           </PrimaryButton>
-        </div>
+        </section>
         <div className="sm:w-1/2 sm:block hidden">
           <div className="flex flex-row gap-[33px]">
             <Image
               src={"/images/about-us.jpg"}
               width={505}
               height={558}
-              className="rounded-[40px]"
+              className="rounded-[40px] animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] z-10"
               alt="about kha data Indonesia - kha mine management system"
             />
             <div className="flex flex-col justify-between">

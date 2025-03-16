@@ -27,17 +27,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .bg-brand-gradient {
-    background-image: linear-gradient(rgba(10, 10, 0, 0), rgba(10, 10, 0, 0.5)),
-      url("../../public/images/0b431e91edbdce7f7f425329c9dcea57.png");
-  }
-  /* .bg-our-services {
-    background-image: linear-gradient(
-      to right,
-      #323b60 0%,
-      #323b60 70%,
-      transparent 70%,
-      transparent 100%
-    );
-  } */
 }

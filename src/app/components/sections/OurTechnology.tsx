@@ -34,12 +34,12 @@ export default function OurTechnology() {
             ],
           ].map(([title, description, imageUrl], index) => (
             <div
-              className="grid grid-flow-row sm:grid-cols-4 gap-[30px] mb-[48px]"
+              className="grid grid-flow-row sm:grid-cols-4 gap-[30px] mb-[48px] animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
               key={title}
             >
               {index % 2 === 0 ? (
                 <>
-                  <div className="col-span-3 sm:col-span-1">
+                  <div className="col-span-3 sm:col-span-1 ">
                     <div className="relative">
                       <Image
                         src={imageUrl}
@@ -51,7 +51,7 @@ export default function OurTechnology() {
                       <div className="image-bg-tech left" />
                     </div>
                   </div>
-                  <div className="col-span-3 ">
+                  <div className="col-span-3 animate-slide-in-left delay-75 [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
                     <h3 className="text-lg/8 sm:text-[40px]/[72px] font-bold pb-2 text-primary-blue">
                       {title}
                     </h3>
@@ -74,7 +74,7 @@ export default function OurTechnology() {
                       <div className="image-bg-tech left" />
                     </div>
                   </div>
-                  <div className="col-span-3 ">
+                  <div className="col-span-3 text-right animate-slide-in-right delay-75 [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
                     <h3 className="text-lg/8 sm:text-[40px]/[72px] font-bold pb-2 text-primary-blue">
                       {title}
                     </h3>
@@ -129,7 +129,10 @@ export default function OurTechnology() {
               "/images/integrated.jpg",
             ],
           ].map(([title, description, url]) => (
-            <div className="col-1 rounded-[32px] relative" key={title}>
+            <div
+              className="col-1 rounded-[32px] relative animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] delay-75"
+              key={title}
+            >
               <Image
                 width={412}
                 height={416}

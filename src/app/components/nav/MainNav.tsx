@@ -57,8 +57,8 @@ export default function MainNav() {
 
   return (
     <div
-      className={`main-nav fixed top-0 w-full transition duration-300 ease-in-out z-10 ${
-        isActive ? "bg-white" : "bg-transparent"
+      className={`main-nav fixed top-0 w-full z-20 -motion-translate-y-in-100 motion-duration-[2s] motion-ease-spring-smooth ${
+        isActive ? "bg-white " : "bg-transparent"
       }`}
     >
       <div

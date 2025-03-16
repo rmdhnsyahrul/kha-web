@@ -14,7 +14,7 @@ export default function TechCard({
 }: Props) {
   return (
     <div
-      className={`py-8 px-4 gap-4 rounded-[32px] h-[288px] ${
+      className={`py-8 px-4 gap-4 rounded-[32px] h-[288px] animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] ${
         secondary ? "bg-primary-grey" : "bg-primary-blue"
       }`}
     >
