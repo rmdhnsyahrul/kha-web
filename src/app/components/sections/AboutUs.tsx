@@ -6,7 +6,10 @@ import SectionTitle from "../typography/SectionTitle";
 
 export default function AboutUs() {
   return (
-    <section className="content bg-white sm:bg-partial-blue " id="about-us">
+    <section
+      className="content bg-white sm:bg-partial-blue scroll-mt-20 sm:scroll-mt-16 "
+      id="about-us"
+    >
       <div className="flex flex-row p-5 sm:py-[70px] sm:px-[80px] gap-[81px]">
         <section className="sm:w-1/2 w-full animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:400px] delay-300">
           <SectionTitle>About us</SectionTitle>

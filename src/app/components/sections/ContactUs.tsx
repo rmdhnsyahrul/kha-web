@@ -6,7 +6,10 @@ import { PrimaryButton } from "../button";
 
 export default function ContactUs() {
   return (
-    <section className="p-5 sm:py-[64px] sm:px-[80px] bg-white" id="contact-us">
+    <section
+      className="p-5 sm:py-[64px] sm:px-[80px] bg-white scroll-mt-20 sm:scroll-mt-12"
+      id="contact-us"
+    >
       <SectionTitle>Contact Us</SectionTitle>
       <div className="flex flex-col sm:flex-row gap-y-8">
         <div className="flex flex-col items-center justify-center text-primary-blue font-bold text-xl">
@@ -26,7 +29,7 @@ export default function ContactUs() {
         <form
           action="#"
           method="POST"
-          className="mx-auto w-full max-w-xl sm:mt-20 animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
+          className="mx-auto w-full max-w-xl animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-4 mb-6">
             <Input label="Name" required id="customer-name" />
@@ -35,7 +38,7 @@ export default function ContactUs() {
             <Input label="Job title" required id="job-title" />
             <Input label="Message" required id="message" />
           </div>
-          <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
+          <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:100px]">
             <PrimaryButton>Book a meeting</PrimaryButton>
           </div>
         </form>

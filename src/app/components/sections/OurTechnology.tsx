@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function OurTechnology() {
   return (
     <section
-      className="flex flex-col p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6]"
+      className="flex flex-col p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6] scroll-mt-20 sm:scroll-mt-16"
       id="our-technology"
     >
       <SectionTitle>Our Technology</SectionTitle>
@@ -99,57 +99,6 @@ export default function OurTechnology() {
                   </div>
                 </>
               )}
-            </div>
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="mt-4 grid grid-flow-row sm:grid-cols-3 gap-[58px]">
-          {[
-            [
-              "Smart Data Analysis",
-              "We provide intelligent and detailed data analysis services to ensure optimal and efficient mine performance.",
-              "./images/gps-tracking.jpg",
-            ],
-            [
-              "Mine Digitalization",
-              "Our services include access to our proprietary cloud computing software where clients would have access to their operations-related data anytime, anywhere, and from any device.",
-              "./images/monitoring.jpg",
-            ],
-            [
-              "Around-the-Clock Service",
-              "We provide fast and responsive service, so you can get the support you need easily and without a hitch.",
-              "./images/gps-tracking.jpg",
-            ],
-            [
-              "Effective Monitoring",
-              "Our services provide effective end-to-end mine monitoring to ensure that all operations run smoothly and without interruption.",
-              "./images/monitoring.jpg",
-            ],
-            [
-              "Expert IT Support",
-              "With a team of reliable and experienced IT experts, we offer the latest technology solutions that are appropriate and effective for all mine monitoring problems.",
-              "./images/integrated.jpg",
-            ],
-          ].map(([title, description, url]) => (
-            <div
-              className="col-1 rounded-[32px] relative animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px] delay-75"
-              key={title}
-            >
-              <Image
-                width={412}
-                height={416}
-                src={url}
-                className="h-auto w-full object-cover rounded-[32px] relative"
-                alt={title}
-                unoptimized
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#323b6080] to-[#323B60] z-1 rounded-[32px] flex flex-col justify-end p-6">
-                <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
-                <p className="text-justify text-lg text-white font-extralight">
-                  {description}
-                </p>
-              </div>
             </div>
           ))}
         </div>

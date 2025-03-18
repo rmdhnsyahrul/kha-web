@@ -5,7 +5,10 @@ import Image from "next/image";
 
 export default function Faq() {
   return (
-    <section className="p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6]">
+    <section
+      className="p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6] scroll-mt-20 sm:scroll-mt-14"
+      id="faq"
+    >
       <SectionTitle>FAQ</SectionTitle>
       <section className="flex flex-col py-6 px-8 gap-4 rounded-[40px] bg-[#D9D9D9] animate-slide-in-right [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
         {[

@@ -32,13 +32,13 @@ export default function HeroSection() {
             operations using data-driven insights from cloud-enabled sensors.
           </p>
           <div className="flex gap-4 mt-[40px]">
-            <PrimaryButton>
-              <Link href={""}>Learn More</Link>
-            </PrimaryButton>
+            <Link href={"#about-us"}>
+              <PrimaryButton>Learn More</PrimaryButton>
+            </Link>
             <div className="motion-preset-pulse-sm">
-              <SecondaryButton>
-                <Link href={""}>Request Demo</Link>
-              </SecondaryButton>
+              <Link href={"#contact-us"}>
+                <SecondaryButton>Request Demo</SecondaryButton>
+              </Link>
             </div>
           </div>
         </div>

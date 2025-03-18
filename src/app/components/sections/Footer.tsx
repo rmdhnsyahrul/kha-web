@@ -68,9 +68,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#181818] flex justify-center py-6">
-        <h5 className="text-sm text-[#F2F2F2]">
-          © 2025 - KHA All Rights Reserved. Development By : KHA
+      <div className="bg-[#181818] flex flex-col sm:flex-row justify-center py-6">
+        <h5 className="text-sm text-[#F2F2F2] flex-col text-center sm:flex-row">
+          © 2025 - KHA All Rights Reserved.
+        </h5>
+        <h5 className="text-sm text-[#F2F2F2] flex-col text-center sm:flex-row">
+          Development By : KHA
         </h5>
       </div>
     </section>

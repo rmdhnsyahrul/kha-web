@@ -11,21 +11,47 @@ const mainNav = [
   ["About", "about-us"],
   ["Our Technology", "our-technology"],
   ["Services", "our-services"],
+  ["FAQ", "faq"],
 ];
 
 export default function MainNav() {
   const [isActive, setIsActive] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const router = useRouter();
+
+  const onPressMenu = useCallback(() => {
+    // toggle show/hide mobile menu
+    setIsMenuOpen((prevState) => !prevState);
+  }, []);
+
+  const [activeSection, setActiveSection] = useState("");
+  const handleMenuPressed = useCallback(
+    (menu: string) => {
+      setIsActive(menu ? true : false);
+      router.replace(`#${menu}`);
+      const element = document.getElementById(menu);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      onPressMenu();
+    },
+    [onPressMenu, router]
+  );
+
   const onScroll = useCallback(() => {
-    console.info(window.scrollY);
     if (window.scrollY > 120) {
       setIsActive(true);
-      if (window.scrollY > 688 && window.scrollY < 1460) {
+      if (window.scrollY > 688 && window.scrollY < 1400) {
         setActiveSection("about-us");
-      } else if (window.scrollY > 1460 && window.scrollY < 3925) {
+      } else if (window.scrollY >= 1400 && window.scrollY < 3030) {
         setActiveSection("our-technology");
-      } else if (window.scrollY > 3925) {
+      } else if (window.scrollY >= 3030 && window.scrollY < 6610) {
         setActiveSection("our-services");
+      } else if (window.scrollY > 6610 && window.scrollY < 7525) {
+        setActiveSection("faq");
+      } else if (window.scrollY > 7525) {
+        setActiveSection("contact-us");
       }
     } else {
       setIsActive(false);
@@ -39,26 +65,10 @@ export default function MainNav() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const router = useRouter();
-
-  const onPressMenu = useCallback(() => {
-    setIsMenuOpen((prevState) => !prevState);
-  }, []);
-
-  /** Todo:
-   * 1. close mobile menu after press menu
-   */
-  const [activeSection, setActiveSection] = useState("");
-  const handleMenuPressed = useCallback((menu: string) => {
-    setActiveSection(menu);
-    onPressMenu();
-    router.replace(`#${menu}`);
-  }, []);
-
   return (
     <div
       className={`main-nav fixed top-0 w-full z-20 -motion-translate-y-in-100 motion-duration-[2s] motion-ease-spring-smooth ${
-        isActive ? "bg-white " : "bg-transparent"
+        isActive ? "bg-white drop-shadow-md" : "bg-transparent"
       }`}
     >
       <div
@@ -103,14 +113,14 @@ export default function MainNav() {
               ))}
             </ul>
           </nav>
-          <PrimaryButton>
-            <Link href={"#contact-us"}>Request Demo</Link>
-          </PrimaryButton>
+          <Link href={"#contact-us"}>
+            <PrimaryButton onClick={() => handleMenuPressed("contact-us")}>
+              Request Demo
+            </PrimaryButton>
+          </Link>
           <span className="flex gap-2 text-sm">
-            <Link href={""} className="font-bold underline">
-              EN
-            </Link>
-            |<Link href={""}>ID</Link>
+            <button className="font-bold underline">EN</button>|
+            <button className="">ID</button>
           </span>
         </div>
         <span className="flex gap-2 text-sm sm:hidden">
@@ -122,7 +132,7 @@ export default function MainNav() {
       </div>
       {isMenuOpen && (
         <div
-          className={`menu !visible sm:hidden p-4 bg-white fixed inset-1 top-0 right-0 left-0`}
+          className={`menu !visible sm:hidden p-4 bg-white fixed inset-0 w-screen h-screen`}
         >
           <div className="absolute right-4">
             <button
@@ -132,7 +142,7 @@ export default function MainNav() {
               <span className="text-lg/3 text-center">X</span>
             </button>
           </div>
-          <nav className="pt-8">
+          <nav className="pt-8 bg-white ">
             <ul className="gap-6 ps-[10px] text-[#323B60]">
               {mainNav.map(([label, url]) => (
                 <li
@@ -150,18 +160,16 @@ export default function MainNav() {
               ))}
             </ul>
           </nav>
-          <div className="flex items-center justify-between p-4 pr-0">
+          <div className="flex items-center justify-between p-4 pr-0 bg-white ">
             <span className="flex gap-2 text-sm sm:hidden">
               <Link href={""} className="font-bold underline">
                 EN
               </Link>
               |<Link href={""}>ID</Link>
             </span>
-            <PrimaryButton>
-              <button onClick={() => handleMenuPressed("contact-us")}>
-                Request Demo
-              </button>
-            </PrimaryButton>
+            <button onClick={() => handleMenuPressed("contact-us")}>
+              <PrimaryButton>Request Demo</PrimaryButton>
+            </button>
           </div>
         </div>
       )}

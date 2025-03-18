@@ -6,7 +6,10 @@ import SectionTitle from "../typography/SectionTitle";
 
 export default function OurServices() {
   return (
-    <section className="content bg-white py-5 sm:py-[40px] " id="our-services">
+    <section
+      className="content bg-white py-5 sm:py-[40px] scroll-mt-20"
+      id="our-services"
+    >
       <div className="px-5 sm:px-[80px]">
         <SectionTitle>Our Services</SectionTitle>
       </div>
