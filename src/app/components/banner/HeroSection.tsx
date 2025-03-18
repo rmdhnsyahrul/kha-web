@@ -14,14 +14,13 @@ export default function HeroSection() {
       <div className="overflow-hidden">
         <Image
           priority
-          src={"./images/hero-section-1.jpg"}
+          src={"./images/image-banner-1.jpg"}
           alt="mine management system"
           objectFit="cover"
           fill
-          className="absolute inset-0 max-h-screen max-w-screen object-cover motion-scale-loop-[1.1] motion-duration-[10s] motion-ease-linear -z-10"
+          className="max-h-screen max-w-screen object-cover motion-scale-loop-[1.1] motion-duration-[10s] motion-ease-linear -z-10"
           unoptimized
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(10,10,0,0)] to-[rgba(10,10,0,1)] opacity-90" />
       </div>
       <div className="flex items-center h-screen">
         <div className="w-[80%] sm:pl-[80px] sm:pt-[100px] pl-8 relative">
