@@ -1,0 +1,106 @@
+{
+  "server-component": {
+    "welcome": "Welcome"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "our_technology": "Our Technology",
+    "services": "Services",
+    "faq": "FAQ",
+    "request-demo": "Request Demo"
+  },
+  "hero-section": {
+    "title-1": "CLOUD-BASED TECHNOLOGY TO SIMPLIFY MINING LOGISTICS",
+    "desc-1": "Through our patented mine management system, optimize your mining operations using data-driven insights from cloud-enabled sensors.",
+    "learn-more": "Learn More",
+    "request-demo": "Request Demo"
+  },
+  "about": {
+    "about-us": "About us",
+    "p-1": "PT. KHA Data Indonesia is an Indonesian registered company that holds a patent for a cloud-based technology to help mining companies optimize their operations through digitalization. Our team consists of experts in the mining and information technology fields who have extensive experience in the mining industry.",
+    "p-2": "We provide mine monitoring solutions that are integrated and can be tailored to our clients&apos; needs. Our systems are designed to provide full visibility of mining operations, enabling our clients to access data in real time and make informed decisions to increase efficiency and productivity.",
+    "tagline": "We exist to make #MiningSimplified for you"
+  },
+  "technology": {
+    "our-technology": "Our Technology",
+    "tech-title-1": "GPS Monitoring and Tracking",
+    "tech-desc-1": "We provide cutting-edge GPS monitoring and tracking features within our mine management platform to revolutionize your mining operations. Our advanced system offers real-time mapping of the mine pit, overburden removal locations, and the routes connecting these critical areas. With precise tracking of equipment and personnel movements, you can ensure all activities are seamlessly recorded and monitored. Our platform's comprehensive mapping capabilities enable optimal route planning and resource allocation, minimizing operational delays and reducing fuel consumption.",
+    "tech-title-2": "Fleet Management System",
+    "tech-desc-2": "We provide a state-of-the-art fleet management system that revolutionizes how you monitor and optimize your mining operations. Our cutting-edge solution tracks the performance of trucks, excavators, and other mining equipment throughout the entire mining supply chain. By leveraging advanced GPS technology and real-time data analytics, our system ensures that every piece of equipment is operating at peak efficiency. Monitor fuel consumption, equipment utilization, and maintenance schedules to reduce downtime and increase productivity. Our comprehensive tracking and reporting features empower you with the insights needed to make informed decisions, streamline operations, and enhance overall safety.",
+    "tech-title-3": "Integrated Dashboard for Benchmarking",
+    "tech-desc-3": "We provide an integrated dashboard for benchmarking mining activities, allowing you to seamlessly compare actual mining results with the planning activities listed in the Rencana Kerja dan Anggaran Belanja (RKAB). Our sophisticated system gathers data from various mining operations and compiles it into a user-friendly interface. This enables you to track progress, identify discrepancies, and ensure adherence to planned schedules and budgets. By offering real-time insights and comprehensive analytics, our dashboard empowers you to make data-driven decisions, optimize resource allocation, and enhance overall operational efficiency.",
+    "tech-title-4": "Fuel Monitoring",
+    "tech-desc-4": "We provide an advanced fuel monitoring system designed to track and optimize fuel usage across various mining equipment used in overburden removals and hauling. Our system offers real-time monitoring and detailed analytics for a range of machinery, including trucks, excavators, bulldozers, and loaders. By leveraging cutting-edge technology, our fuel monitoring system enables you to identify inefficiencies, reduce fuel consumption, and minimize costs. With comprehensive reporting and data visualization, you gain valuable insights into fuel usage patterns, allowing for more informed decision-making and improved operational efficiency."
+  },
+  "service": {
+    "our-service": "Our Services",
+    "spec": "On Specs",
+    "spec-desc": "With real-time tracking, our clients will be able to evaluate the specifications of mining production results",
+    "stock": "On Stock",
+    "stock-desc": "Our cloud-based systems will enable our clients to properly estimate mining reserves at any given time.",
+    "schedule": "On Schedule",
+    "schedule-desc": "Through our integrated systems, our clients will be track the delivery of the mining products across the value chain.",
+    "budget": "On Budget",
+    "budget-desc": "Through our customizable financial models, our clients will be able to accurately estimate fuel, labor and other miningrelated costs to control their budget.",
+    "efficient": "Efficient Use of Labor and Equipment",
+    "efficient-desc": "Our cloud-based systems will enable our clients to make datadriven decisions on labor and equipment needed for mining production and transportation.",
+    "mining-simplified": "Mining Simplified",
+    "cloud-based": "Cloud-Based Technology",
+    "cloud-based-desc": "Our cloud-based systems allow you to access critical data such as production, equipment health and personnel safety, so you can make informed decisions and improve overall efficiency.",
+    "expert": "Trusted Expertise",
+    "expert-desc": "Our expertise in mining operations and IT solutions allows us to provide comprehensive and reliable mine monitoring systems.",
+    "custom": "Customizable Solutions",
+    "custom-desc": "Every mining operation is unique, and we offer solutions that can be customized to suit your needs. Our team works closely with you to understand your needs and provide solutions that meet your business goals.",
+    "cost": "Cost-Effective",
+    "cost-desc": "Our solutions are designed to provide maximum value for your investment. Our effective monitoring system helps you reduce operational costs, minimize downtime and increase productivity",
+    "integrated-data": "Integrated Data-Driven Insights Across Value Chain",
+    "extraction": "Mineral Extraction",
+    "extraction-desc": "Our clients will be able to make data-driven decisions to estimate the resource needed and properly benchmark daily land clearing, overburden removal and mineral extractions",
+    "hauling": "Transportation",
+    "hauling-desc": "Real-time tracking of fuel consumption and monitoring of truck volume to mitigate unnecessary losses during the transportation process.",
+    "barging": "Barging",
+    "barging-desc": "Transparent documentation of required permits and realtime GPS tracking of barge transportation to Mother Vessel"
+  },
+  "faq": {
+    "faq": "FAQ",
+    "q-1": "What does mine digitalization entails?",
+    "a-1": "Mining digitalization is the process of using the latest technology to increase efficiency and productivity throughout the mining cycle, from exploration and development, through production, to delivery and marketing.",
+    "q-2": "What kind of digital solutions available for the mining industry?",
+    "a-2": "There are many digital solutions available for the mining industry, such as automation and control technology, IoT, AI and data analysis, cloud computing, and supply chain management systems. PT. KHA Data Indonesia has the resources to help you implement digital solutions for your day-to-day mining oprations.",
+    "q-3": "Why is mine digitalization important for the industry and the economy?",
+    "a-3": "Digitalization helps increase efficiency, reduce costs and minimize risks in mining operations. Apart from that, digitalization also helps mining businesses prepare for an increasingly digital and interconnected future.",
+    "q-4": "How to implement digital solution for mining operations?",
+    "a-4": "Implementing digital solutions for mining requires a mature strategy and careful planning. Mining companies must identify their business needs, evaluate available technologies, and select the most appropriate solutions. PT. KHA Data Indonesia will provide consulting and advisory services for you to help train staff and implement digital solution for your mining operations.",
+    "q-5": "What is the benefit of mine digitalization in day-to-day operations?",
+    "a-5": "The benefits of mining digitalization in day-to-day operations include increasing efficiency and productivity, reducing costs, improving occupational safety and health, and minimizing risks in mining operations. Digitalization also helps increase customer satisfaction and strengthen the company's position in the market.",
+    "q-6": "How can I know more about PT KHA Data Indonesia cloudbased mining management systems?",
+    "a-6": "Please contact us using the form below and we would be more than happy to customize a solution for you and your mining operations."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "notes": "If you are interested in our product and want to request demo product, please fill the following form.",
+    "button": "Book a meeting",
+    "name": "Name",
+    "email": "Email Address",
+    "company": "Company",
+    "job": "Job Title",
+    "message": "Message"
+  },
+  "footer": {
+    "information": "Information",
+    "address": "SOHO Pancoran Tower Splendor Lt.18 Unit 1817, Jl. Letjen M.T. Haryono.Kav. 2-3, RT.1/RW.6, Tebet Bar., Kec. Tebet, Soho, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12810 Jakarta Selatan",
+    "phone": "+62 8128 8881 461",
+    "email": "admin@kha.co.id",
+    "about-kha": "About KHA",
+    "company-profile": "Company Profile",
+    "career": "Career",
+    "knowledge-center": "Knowledge Center",
+    "brochures": "Brochures",
+    "services": "Services"
+  }
+}

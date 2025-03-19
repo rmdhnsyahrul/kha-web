@@ -2,44 +2,57 @@ import Image from "next/image";
 import React from "react";
 import SectionTitle from "../typography/SectionTitle";
 import TechCard from "../card/TechCard";
+import heavyVehicle from "../../../../public/images/heavy-vehicles.jpg";
+import icCloud from "../../../../public/images/ic-cloud-based.svg";
+import icExpert from "../../../../public/images/ic-trusted-expert.svg";
+import icCustom from "../../../../public/images/ic-customizeable.svg";
+import icCost from "../../../../public/images/ic-cost-effective.svg";
+import icMineral from "../../../../public/images/ic-mineral-extraction.svg";
+import icHauling from "../../../../public/images/ic-hauling.svg";
+import icBarging from "../../../../public/images/ic-barging.svg";
+import khaLogo from "../../../../public/images/kha-potrait-4x.png";
+import dotCorner from "../../../../public/images/dot-corner-5x5.png";
+import { getDictionary } from "@/get-dictionary";
 
-export default function MiningSimplefied() {
+export default function MiningSimplefied({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["service"];
+}) {
   return (
     <section className="bg-white">
       <div className="relative">
         <Image
-          src={"./images/heavy-vehicles.jpg"}
-          // fill
+          src={heavyVehicle}
           width={1000}
           height={342}
           className="w-full h-[342] object-center animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
           alt=""
           unoptimized
         />
-        {/* <div className="absolute inset-0 w-full h-[342] z-1 bg-[#000000BF] opacity-5" /> */}
       </div>
       <section className="p-5 sm:py-[64px] sm:px-[80px]" id="our-technology">
-        <SectionTitle>Mining Simplified</SectionTitle>
+        <SectionTitle>{dictionary["mining-simplified"]}</SectionTitle>
         <div className="px-0 sm:px-[62px] sm:block hidden">
           <div className="grid sm:grid-cols-3 grid-flow-col">
             <div className="col-1">&nbsp;</div>
             <TechCard
-              icon="./images/ic-cloud-based.svg"
-              title="Cloud-Based Technology"
-              description="Our cloud-based systems allow you to access critical data such as production, equipment health and personnel safety, so you can make informed decisions and improve overall efficiency."
+              icon={icCloud}
+              title={dictionary["cloud-based"]}
+              description={dictionary["cloud-based-desc"]}
               secondary
             />
             <div className="col-1">&nbsp;</div>
           </div>
           <div className="grid sm:grid-cols-3 grid-flow-col">
             <TechCard
-              icon="./images/ic-trusted-expert.svg"
-              title="Trusted Expertise"
-              description="Our expertise in mining operations and IT solutions allows us to provide comprehensive and reliable mine monitoring systems."
+              icon={icExpert}
+              title={dictionary.expert}
+              description={dictionary["expert-desc"]}
             />
             <div className="relative col-1">
               <Image
-                src={"./images/kha-potrait-4x.png"}
+                src={khaLogo}
                 width={100}
                 height={100}
                 alt=""
@@ -48,17 +61,17 @@ export default function MiningSimplefied() {
               />
             </div>
             <TechCard
-              icon="./images/ic-customizeable.svg"
-              title="Customizable Solutions"
-              description="Every mining operation is unique, and we offer solutions that can be customized to suit your needs. Our team works closely with you to understand your needs and provide solutions that meet your business goals."
+              icon={icCustom}
+              title={dictionary.custom}
+              description={dictionary["custom-desc"]}
             />
           </div>
           <div className="grid sm:grid-cols-3 grid-flow-col">
             <div className="col-1">&nbsp;</div>
             <TechCard
-              icon="./images/ic-cost-effective.svg"
-              title="Cost-Effective"
-              description="Our solutions are designed to provide maximum value for your investment. Our effective monitoring system helps you reduce operational costs, minimize downtime and increase productivity"
+              icon={icCost}
+              title={dictionary.cost}
+              description={dictionary["cost-desc"]}
               secondary
             />
             <div className="col-1">&nbsp;</div>
@@ -67,15 +80,15 @@ export default function MiningSimplefied() {
 
         <div className="grid grid-flow-row sm:hidden gap-y-4">
           <TechCard
-            icon="./images/ic-cloud-based.svg"
-            title="Cloud-Based Technology"
-            description="Our cloud-based systems allow you to access critical data such as production, equipment health and personnel safety, so you can make informed decisions and improve overall efficiency."
+            icon={icCloud}
+            title={dictionary["cloud-based"]}
+            description={dictionary["cloud-based-desc"]}
             secondary
           />
           <TechCard
-            icon="./images/ic-trusted-expert.svg"
-            title="Trusted Expertise"
-            description="Our expertise in mining operations and IT solutions allows us to provide comprehensive and reliable mine monitoring systems."
+            icon={icExpert}
+            title={dictionary.expert}
+            description={dictionary["expert-desc"]}
           />
           <div className="relative col-1">
             <Image
@@ -88,21 +101,21 @@ export default function MiningSimplefied() {
             />
           </div>
           <TechCard
-            icon="./images/ic-customizeable.svg"
-            title="Customizable Solutions"
-            description="Every mining operation is unique, and we offer solutions that can be customized to suit your needs. Our team works closely with you to understand your needs and provide solutions that meet your business goals."
+            icon={icCustom}
+            title={dictionary.custom}
+            description={dictionary["custom-desc"]}
           />
           <TechCard
-            icon="./images/ic-cost-effective.svg"
-            title="Cost-Effective"
-            description="Our solutions are designed to provide maximum value for your investment. Our effective monitoring system helps you reduce operational costs, minimize downtime and increase productivity"
+            icon={icCost}
+            title={dictionary.cost}
+            description={dictionary["cost-desc"]}
             secondary
           />
         </div>
 
         <div className="flex justify-between">
           <Image
-            src={"./images/dot-corner-5x5.png"}
+            src={dotCorner}
             width={88}
             height={88}
             alt=""
@@ -110,7 +123,7 @@ export default function MiningSimplefied() {
             unoptimized
           />
           <Image
-            src={"./images/dot-corner-5x5.png"}
+            src={dotCorner}
             width={88}
             height={88}
             alt=""
@@ -125,26 +138,26 @@ export default function MiningSimplefied() {
         </h1>
         <div className="grid sm:grid-cols-3 grid-flow-row gap-6 py-[34px]">
           <TechCard
-            icon="./images/ic-mineral-extraction.svg"
-            title="Mineral Extraction"
-            description="Our clients will be able to make data-driven decisions to estimate the resource needed and properly benchmark daily land clearing, overburden removal and mineral extractions"
+            icon={icMineral}
+            title={dictionary.extraction}
+            description={dictionary["extraction-desc"]}
             secondary
           />
           <TechCard
-            icon="./images/ic-hauling.svg"
-            title="Transportation"
-            description="Real-time tracking of fuel consumption and monitoring of truck volume to mitigate unnecessary losses during the transportation process."
+            icon={icHauling}
+            title={dictionary.hauling}
+            description={dictionary["hauling-desc"]}
           />
           <TechCard
-            icon="./images/ic-barging.svg"
-            title="Barging"
-            description="Transparent documentation of required permits and realtime GPS tracking of barge transportation to Mother Vessel"
+            icon={icBarging}
+            title={dictionary.barging}
+            description={dictionary["barging-desc"]}
             secondary
           />
         </div>
         <div className="flex justify-between">
           <Image
-            src={"./images/dot-corner-5x5.png"}
+            src={dotCorner}
             width={88}
             height={88}
             alt=""
@@ -152,7 +165,7 @@ export default function MiningSimplefied() {
             unoptimized
           />
           <Image
-            src={"./images/dot-corner-5x5.png"}
+            src={dotCorner}
             width={88}
             height={88}
             alt=""

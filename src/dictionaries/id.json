@@ -1,0 +1,106 @@
+{
+  "server-component": {
+    "welcome": "Selamat Datang"
+  },
+  "counter": {
+    "increment": "Penambahan",
+    "decrement": "Pengurangan"
+  },
+  "navigation": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "our_technology": "Teknologi",
+    "services": "Layanan",
+    "faq": "FAQ",
+    "request-demo": "Minta Demo"
+  },
+  "hero-section": {
+    "title-1": "Teknologi Berbasis Cloud untuk Menyederhanakan Proses Pertambangan Anda",
+    "desc-1": "Melalui sistem manajemen tambang telah dipatenkan, optimalkan operasi penambangan anda dengan data dan informasi yang teroptimalisasi menggunakan sensor dan teknologi berbasis cloud.",
+    "learn-more": "Ketahui Lebih Lanjut",
+    "request-demo": "Minta Demo"
+  },
+  "about": {
+    "about-us": "Tentang Kami",
+    "p-1": "PT. KHA Data Indonesia adalah perusahaan terdaftar di Indonesia yang memegang hak paten atas sebuah teknologi berbasis cloud untuk membantu perusahaan pertambangan mengoptimalkan operasinya melalui proses digitalisasi. Tim kami terdiri dari para ahli di bidang pertambangan dan teknologi informasi yang memiliki pengalaman luas di industri pertambangan.",
+    "p-2": "Kami memberikan solusi pemantauan tambang yang terintegrasi dan dapat disesuaikan dengan kebutuhan klien kami. Sistem kami dirancang untuk memberikan visibilitas penuh terhadap operasi penambangan, memungkinkan klien kami mengakses data secara real-time dan membuat keputusan yang tepat untuk meningkatkan efisiensi dan produktivitas.",
+    "tagline": "Kami hadir untuk membuat #PertambanganLebihGampang untuk anda."
+  },
+  "technology": {
+    "our-technology": "Teknologi Kami",
+    "tech-title-1": "Pemantauan dan Pelacakan Melalui GPS",
+    "tech-desc-1": "Kami menyediakan fitur pemantauan dan pelacakan GPS dalam platform manajemen tambang kami untuk merevolusi operasi penambangan Anda. Sistem canggih kami menawarkan pemetaan lubang tambang, lokasi pemindahan lapisan tanah penutup, dan rute yang menghubungkan area kritis ini secara real-time. Dengan pelacakan peralatan dan pergerakan personel yang tepat, Anda dapat memastikan semua aktivitas terekam dan terpantau dengan lancar. Kemampuan pemetaan platform kami yang komprehensif memungkinkan perencanaan rute dan alokasi sumber daya yang optimal, meminimalkan penundaan operasional dan mengurangi konsumsi bahan bakar.",
+    "tech-title-2": "Sistem Manajemen Armada",
+    "tech-desc-2": "Kami menyediakan sistem manajemen armada yang merevolusi cara Anda memantau dan mengoptimalkan operasi pertambangan Anda. Solusi canggih kami melacak kinerja truk, ekskavator, dan peralatan pertambangan lainnya di seluruh rantai pasokan pertambangan. Dengan memanfaatkan teknologi GPS canggih dan analisis data waktu nyata, sistem kami memastikan bahwa setiap peralatan beroperasi pada efisiensi puncak. Pantau konsumsi bahan bakar, pemanfaatan peralatan, dan jadwal perawatan untuk mengurangi waktu henti dan meningkatkan produktivitas. Fitur pelacakan dan pelaporan komprehensif kami memberdayakan Anda dengan wawasan yang dibutuhkan untuk membuat keputusan yang tepat, menyederhanakan operasi, dan meningkatkan keselamatan secara keseluruhan.",
+    "tech-title-3": "Dashbor Terpadu untuk Menjaga Kinerja",
+    "tech-desc-3": "Kami menyediakan dasbor terpadu untuk menjaga kinerja dan target pertambangan, yang memungkinkan Anda untuk membandingkan hasil penambangan aktual dengan aktivitas perencanaan yang tercantum dalam Rencana Kerja dan Anggaran Belanja (RKAB) secara detail. Sistem canggih kami mengumpulkan data dari berbagai operasi penambangan dan menyusunnya menjadi antarmuka yang mudah digunakan. Hal ini memungkinkan Anda untuk melacak kemajuan, mengidentifikasi ketidaksesuaian, dan memastikan kepatuhan terhadap jadwal dan anggaran yang direncanakan. Dengan menawarkan wawasan waktu nyata dan analisis yang komprehensif, dasbor kami memberdayakan Anda untuk membuat keputusan berdasarkan data, mengoptimalkan alokasi sumber daya, dan meningkatkan efisiensi operasional secara keseluruhan.",
+    "tech-title-4": "Pemantauan Bahan Bakar",
+    "tech-desc-4": "Kami menyediakan sistem pemantauan bahan bakar yang dirancang untuk melacak dan mengoptimalkan penggunaan bahan bakar di berbagai peralatan pertambangan yang digunakan dalam pemindahan dan pengangkutan lapisan tanah penutup. Sistem kami menawarkan pemantauan waktu nyata dan analisis terperinci untuk berbagai mesin, termasuk truk, ekskavator, buldoser, dan loader. Dengan memanfaatkan teknologi mutakhir, sistem pemantauan bahan bakar kami memungkinkan Anda mengidentifikasi inefisiensi, mengurangi konsumsi bahan bakar, dan meminimalkan biaya. Dengan pelaporan dan visualisasi data yang komprehensif, Anda memperoleh wawasan berharga tentang pola penggunaan bahan bakar, yang memungkinkan pengambilan keputusan yang lebih tepat dan peningkatan efisiensi operasional."
+  },
+  "service": {
+    "our-service": "Jasa Kami",
+    "spec": "Sesuai Spesifikasi",
+    "spec-desc": "Dengan pemantauan secara real-time, klien kami akan dapat mengevaluasi spesifikasi hasil produksi penambangan secara langsung.",
+    "stock": "Sesuai Persediaan",
+    "stock-desc": "Sistem berbasis cloud kami akan memungkinkan klien kami memperkirakan cadangan penambangan dengan tepat kapan saja.",
+    "schedule": "Sesuai Jadwal",
+    "schedule-desc": "Melalui sistem terintegrasi kami, klien kami dapat melakukan pemantauan untuk pengiriman produk pertambangan di seluruh proses transaksi dan penambangan.",
+    "budget": "Sesuai Anggaran",
+    "budget-desc": "Melalui model keuangan kami yang dapat disesuaikan, klien kami akan dapat memperkirakan secara akurat bahan bakar, tenaga kerja, dan biaya terkait pertambangan lainnya untuk mengendalikan anggaran mereka.",
+    "efficient": "Penggunaan Tenaga Kerja dan Alat yang Efisien",
+    "efficient-desc": "Sistem berbasis cloud kami akan memungkinkan klien kami mengambil keputusan berdasarkan data mengenai tenaga kerja dan peralatan yang dibutuhkan untuk produksi dan transportasi pertambangan.",
+    "mining-simplified": "Pertambangan Dipermudah",
+    "cloud-based": "Teknologi Berbasis Cloud",
+    "cloud-based-desc": "Sistem berbasis cloud kami memungkinkan Anda mengakses data penting seperti produksi, kesehatan peralatan, dan keselamatan personel, sehingga Anda dapat membuat keputusan yang tepat dan meningkatkan efisiensi secara keseluruhan.",
+    "expert": "Keahlian Tepercaya",
+    "expert-desc": "Keahlian kami dalam operasi pertambangan dan solusi TI memungkinkan kami menyediakan sistem pemantauan tambang yang komprehensif dan andal.",
+    "custom": "Solusi yang Dapat Disesuaikan",
+    "custom-desc": "Setiap operasi penambangan bersifat unik, dan kami menawarkan solusi yang dapat disesuaikan dengan kebutuhan Anda. Tim kami bekerja sama erat dengan Anda untuk memahami kebutuhan Anda dan memberikan solusi yang memenuhi tujuan bisnis Anda.",
+    "cost": "Hemat Biaya",
+    "cost-desc": "Solusi kami dirancang untuk memberikan nilai maksimal bagi investasi Anda. Sistem pemantauan kami yang efektif membantu Anda mengurangi biaya operasional, meminimalkan waktu henti, dan meningkatkan produktivitas.",
+    "integrated-data": "Data Yang Terintegrasi di Seluruh Proses Pertambangan dan Transaksi",
+    "extraction": "Penambangan",
+    "extraction-desc": "Teknologi kami dapat memperkirakan sumber daya yang dibutuhkan dalam proses penambangan dan melakukan estimasi yang akurat terhadap pembukaan lahan harian, overburden removal, dan pengambilan hasil tambang.",
+    "hauling": "Transportasi",
+    "hauling-desc": "Pemantauan konsumsi bahan bakar dan pemantauan volume truk secara real-time untuk mengurangi kerugian dan resiko lainnya selama proses transportasi.",
+    "barging": "Proses Barging",
+    "barging-desc": "Dokumentasi izin yang transparan dan pemantauan pergerakan kapal tongkang ke Mother Vessel dengan menggunakan GPS dan teknologi berbasis Cloud."
+  },
+  "faq": {
+    "faq": "FAQ",
+    "q-1": "Apa itu Digitalisasi Tambang?",
+    "a-1": "Digitalisasi tambang adalah proses menggunakan teknologi terbaru untuk meningkatkan efisiensi dan produktivitas di seluruh siklus tambang, mulai dari eksplorasi dan pengembangan, produksi, hingga pengiriman dan pemasaran.",
+    "q-2": "Apa Solusi Digital yang Tersedia untuk Industri Tambang?",
+    "a-2": "Ada banyak solusi digital yang tersedia untuk industri pertambangan, seperti teknologi otomasi dan kontrol, IoT, AI dan analisis data, komputasi awan, dan sistem manajemen rantai pasokan. PT. KHA Data Indonesia memiliki sumber daya untuk membantu Anda menerapkan solusi digital untuk operasi penambangan Anda sehari-hari.",
+    "q-3": "Mengapa Digitalisasi Penting Bagi Industri Tambang?",
+    "a-3": "Digitalisasi membantu meningkatkan efisiensi, mengurangi biaya, dan meminimalkan risiko dalam operasi tambang. Selain itu, digitalisasi juga membantu bisnis tambang bersiap menghadapi masa depan yang semakin digital.",
+    "q-4": "Bagaimana Mengimplementasikan Solusi Digital Untuk Tambang?",
+    "a-4": "Penerapan solusi digital pada pertambangan memerlukan strategi yang matang dan perencanaan yang matang. Perusahaan pertambangan harus mengidentifikasi kebutuhan bisnis mereka, mengevaluasi teknologi yang tersedia, dan memilih solusi yang paling tepat. PT. KHA Data Indonesia akan memberikan layanan konsultasi dan konsultasi bagi Anda untuk membantu melatih staf dan menerapkan solusi digital untuk operasi penambangan Anda.",
+    "q-5": "Apa Manfaat yang Diperoleh dari Digitalisasi Tambang?",
+    "a-5": "Manfaat dari digitalisasi tambang termasuk peningkatan efisiensi dan produktivitas, pengurangan biaya, meningkatkan keselamatan dan kesehatan kerja, serta meminimalkan risiko dalam operasi tambang. Digitalisasi juga membantu meningkatkan kepuasan pelanggan dan memperkuat posisi perusahaan di pasar.",
+    "q-6": "Bagaimana Saya Bisa Menghubungi PT. KHA Data Indonesia untuk Menyediakan Solusi Pertambangan untuk Saya?",
+    "a-6": "Silakan hubungi kami menggunakan formulir di bawah ini dan kami dengan senang hati akan memberikan solusi terbaik untuk Anda dan operasi penambangan Anda."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "notes": "Jika Anda mempunyai pertanyaan atau jika Anda tertarik untuk mengetahui lebih banyak tentang teknologi milik kami, silahkan isi formulir Hubungi Kami berikut.",
+    "button": "Book a meeting",
+    "name": "Nama",
+    "email": "Email",
+    "company": "Nama Perusahaan",
+    "job": "Jabatan",
+    "message": "Pesan"
+  },
+  "footer": {
+    "information": "Informasi",
+    "address": "SOHO Pancoran Tower Splendor Lt.18 Unit 1817, Jl. Letjen M.T. Haryono.Kav. 2-3, RT.1/RW.6, Tebet Bar., Kec. Tebet, Soho, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12810 Jakarta Selatan",
+    "phone": "+62 8128 8881 461",
+    "email": "admin@kha.co.id",
+    "about-kha": "Tentang KHA",
+    "company-profile": "Profil Perusahaan",
+    "career": "Karir",
+    "knowledge-center": "Pusat Bantuan",
+    "brochures": "Brosur",
+    "services": "Layanan"
+  }
+}

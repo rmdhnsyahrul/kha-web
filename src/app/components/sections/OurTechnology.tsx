@@ -1,41 +1,37 @@
 import React from "react";
 import SectionTitle from "../typography/SectionTitle";
 import Image from "next/image";
+import { getDictionary } from "@/get-dictionary";
+import gpsTracking from "../../../../public/images/gps-tracking.jpg";
+import monitoring from "../../../../public/images/monitoring.jpg";
+import integrated from "../../../../public/images/integrated.jpg";
 
-export default function OurTechnology() {
+export default function OurTechnology({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["technology"];
+}) {
   return (
     <section
       className="flex flex-col p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6] scroll-mt-20 sm:scroll-mt-16"
       id="our-technology"
     >
-      <SectionTitle>Our Technology</SectionTitle>
+      <SectionTitle>{dictionary["our-technology"]}</SectionTitle>
       <section>
         <div className="mt-4">
           {[
             [
-              "GPS Monitoring and Tracking",
-              "We provide cutting-edge GPS monitoring and tracking features within our mine management platform to revolutionize your mining operations. Our advanced system offers real-time mapping of the mine pit, overburden removal locations, and the routes connecting these critical areas. With precise tracking of equipment and personnel movements, you can ensure all activities are seamlessly recorded and monitored. Our platform's comprehensive mapping capabilities enable optimal route planning and resource allocation, minimizing operational delays and reducing fuel consumption.",
-              "./images/gps-tracking.jpg",
+              dictionary["tech-title-1"],
+              dictionary["tech-desc-1"],
+              gpsTracking,
             ],
-            [
-              "Fleet Management System",
-              "We provide a state-of-the-art fleet management system that revolutionizes how you monitor and optimize your mining operations. Our cutting-edge solution tracks the performance of trucks, excavators, and other mining equipment throughout the entire mining supply chain. By leveraging advanced GPS technology and real-time data analytics, our system ensures that every piece of equipment is operating at peak efficiency. Monitor fuel consumption, equipment utilization, and maintenance schedules to reduce downtime and increase productivity. Our comprehensive tracking and reporting features empower you with the insights needed to make informed decisions, streamline operations, and enhance overall safety.",
-              "./images/monitoring.jpg",
-            ],
-            [
-              "Integrated Dashboard for Benchmarking",
-              "We provide an integrated dashboard for benchmarking mining activities, allowing you to seamlessly compare actual mining results with the planning activities listed in the Rencana Kerja dan Anggaran Belanja (RKAB). Our sophisticated system gathers data from various mining operations and compiles it into a user-friendly interface. This enables you to track progress, identify discrepancies, and ensure adherence to planned schedules and budgets. By offering real-time insights and comprehensive analytics, our dashboard empowers you to make data-driven decisions, optimize resource allocation, and enhance overall operational efficiency.",
-              "./images/integrated.jpg",
-            ],
-            [
-              "Fuel Monitoring",
-              "We provide an advanced fuel monitoring system designed to track and optimize fuel usage across various mining equipment used in overburden removals and hauling. Our system offers real-time monitoring and detailed analytics for a range of machinery, including trucks, excavators, bulldozers, and loaders. By leveraging cutting-edge technology, our fuel monitoring system enables you to identify inefficiencies, reduce fuel consumption, and minimize costs. With comprehensive reporting and data visualization, you gain valuable insights into fuel usage patterns, allowing for more informed decision-making and improved operational efficiency.",
-              "./images/monitoring.jpg",
-            ],
+            [dictionary["tech-title-2"], dictionary["tech-desc-2"], monitoring],
+            [dictionary["tech-title-3"], dictionary["tech-desc-3"], integrated],
+            [dictionary["tech-title-4"], dictionary["tech-desc-4"], monitoring],
           ].map(([title, description, imageUrl], index) => (
             <div
               className="grid grid-flow-row sm:grid-cols-4 gap-[30px] mb-[48px] animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
-              key={title}
+              key={title.toString().trim()}
             >
               {index % 2 === 0 ? (
                 <>
@@ -46,7 +42,7 @@ export default function OurTechnology() {
                         width={323}
                         height={323}
                         className="rounded-[32px] w-full h-auto"
-                        alt="gps monitoring and tracking"
+                        alt={title as string}
                         unoptimized
                       />
                       <div className="image-bg-tech left" />
@@ -54,10 +50,10 @@ export default function OurTechnology() {
                   </div>
                   <div className="col-span-3 animate-slide-in-left delay-75 [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
                     <h3 className="text-lg/8 sm:text-[40px]/[72px] font-bold pb-2 text-primary-blue">
-                      {title}
+                      {title as string}
                     </h3>
                     <p className="sm:text-[18px]/[32px] text-[#0A0A0A] !text-justify">
-                      {description}
+                      {description as string}
                     </p>
                   </div>
                 </>
@@ -70,7 +66,7 @@ export default function OurTechnology() {
                         width={323}
                         height={323}
                         className="rounded-[32px] w-full h-auto"
-                        alt="gps monitoring and tracking"
+                        alt={title as string}
                         unoptimized
                       />
                       <div className="image-bg-tech left" />
@@ -78,10 +74,10 @@ export default function OurTechnology() {
                   </div>
                   <div className="col-span-3 text-right animate-slide-in-right delay-75 [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]">
                     <h3 className="text-lg/8 sm:text-[40px]/[72px] font-bold pb-2 text-primary-blue">
-                      {title}
+                      {title as string}
                     </h3>
                     <p className="sm:text-[18px]/[32px] text-[#0A0A0A] !text-justify">
-                      {description}
+                      {description as string}
                     </p>
                   </div>
                   <div className="hidden sm:block sm:col-1">
@@ -91,7 +87,7 @@ export default function OurTechnology() {
                         width={323}
                         height={323}
                         className="rounded-[32px] w-full h-auto"
-                        alt="gps monitoring and tracking"
+                        alt={title as string}
                         unoptimized
                       />
                       <div className="image-bg-tech left" />

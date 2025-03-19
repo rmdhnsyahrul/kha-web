@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import { Locale } from "@/i18n-config";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import MainNav from "./components/nav/MainNav";
-import Footer from "./components/sections/Footer";
+import React from "react";
+import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,18 +13,16 @@ export const metadata: Metadata = {
     "KHA,Mining,FMS,Fleet Management System,GPS,Fuel Sensor,BAN,Coal,coaling,hauling,mining,Khairin,khairin anwar,batu bara,batu,bara,BBM,fuel,Mining Management System,Mining System,Coaling System,Sistem Tambang",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default async function RootLayout(props: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const params = await props.params;
+  const { children } = props;
+
   return (
-    <html lang="en" className="scroll-smooth overflow-x-hidden">
-      <body className={inter.className}>
-        <MainNav />
-        {children}
-        <Footer />
-      </body>
+    <html lang={params.lang} className="scroll-smooth overflow-x-hidden">
+      <body>{children}</body>
     </html>
   );
 }

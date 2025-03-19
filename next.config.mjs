@@ -1,19 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export",
+  // output: "export",
   basePath: process.env.PAGES_BASE_PATH,
   images: {
-    remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost:3000",
-      },
-      {
-        protocol: "https",
-        hostname: "rmdhnsyahrul.github.io/kha-web/",
-      },
-    ],
+    // localPatterns: [
+    //   {
+    //     pathname: "/images/**",
+    //     search: "",
+    //   },
+    // ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "http",
+    //     hostname: "localhost:3000",
+    //   },
+    //   {
+    //     protocol: "https",
+    //     hostname: "rmdhnsyahrul.github.io/kha-web/",
+    //   },
+    // ],
   },
 };
 

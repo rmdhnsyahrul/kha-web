@@ -3,28 +3,32 @@ import SectionTitle from "../typography/SectionTitle";
 import Image from "next/image";
 import Input from "../Form/Input";
 import { PrimaryButton } from "../button";
+import { getDictionary } from "@/get-dictionary";
+import dotBlue from "../../../../public/images/dot-corner-5x5-blue.svg";
+import khaPotrait from "../../../../public/images/kha-potrait-4x.png";
 
-export default function ContactUs() {
+export default function ContactUs({
+  dictionary,
+}: {
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["contact"];
+}) {
   return (
     <section
       className="p-5 sm:py-[64px] sm:px-[80px] bg-white scroll-mt-20 sm:scroll-mt-12"
       id="contact-us"
     >
-      <SectionTitle>Contact Us</SectionTitle>
+      <SectionTitle>{dictionary.title}</SectionTitle>
       <div className="flex flex-col sm:flex-row gap-y-8">
         <div className="flex flex-col items-center justify-center text-primary-blue font-bold text-xl">
           <Image
-            src={"./images/kha-potrait-4x.png"}
+            src={khaPotrait}
             width={100}
             height={100}
             alt=""
             className="w-full h-[300px] object-contain"
             unoptimized
           />
-          <h3 className="text-center px-6">
-            If you are interested in our product and want to request demo
-            product, please fill the following form.
-          </h3>
+          <h3 className="text-center px-6">{dictionary.notes}</h3>
         </div>
         <form
           action="#"
@@ -32,20 +36,20 @@ export default function ContactUs() {
           className="mx-auto w-full max-w-xl animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-4 mb-6">
-            <Input label="Name" required id="customer-name" />
-            <Input label="Email address" required id="customer-email" />
-            <Input label="Company" required id="company" />
-            <Input label="Job title" required id="job-title" />
-            <Input label="Message" required id="message" />
+            <Input label={dictionary.name} required id="customer-name" />
+            <Input label={dictionary.email} required id="customer-email" />
+            <Input label={dictionary.company} required id="company" />
+            <Input label={dictionary.job} required id="job-title" />
+            <Input label={dictionary.message} required id="message" />
           </div>
           <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:100px]">
-            <PrimaryButton>Book a meeting</PrimaryButton>
+            <PrimaryButton>{dictionary.button}</PrimaryButton>
           </div>
         </form>
       </div>
       <div className="flex justify-between mt-8">
         <Image
-          src={"./images/dot-corner-5x5-blue.svg"}
+          src={dotBlue}
           width={100}
           height={100}
           alt=""
@@ -53,7 +57,7 @@ export default function ContactUs() {
           unoptimized
         />
         <Image
-          src={"./images/dot-corner-5x5-blue.svg"}
+          src={dotBlue}
           width={100}
           height={100}
           alt=""
