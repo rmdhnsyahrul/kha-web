@@ -1,11 +1,10 @@
 import React from "react";
 import SectionTitle from "../typography/SectionTitle";
 import Image from "next/image";
-import Input from "../Form/Input";
-import { PrimaryButton } from "../button";
 import { getDictionary } from "@/get-dictionary";
 import dotBlue from "../../../../public/images/dot-corner-5x5-blue.svg";
 import khaPotrait from "../../../../public/images/kha-potrait-4x.png";
+import Contact from "../Form/Contact";
 
 export default function ContactUs({
   dictionary,
@@ -30,22 +29,7 @@ export default function ContactUs({
           />
           <h3 className="text-center px-6">{dictionary.notes}</h3>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="mx-auto w-full max-w-xl animate-slide-in-left [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:500px]"
-        >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-4 mb-6">
-            <Input label={dictionary.name} required id="customer-name" />
-            <Input label={dictionary.email} required id="customer-email" />
-            <Input label={dictionary.company} required id="company" />
-            <Input label={dictionary.job} required id="job-title" />
-            <Input label={dictionary.message} required id="message" />
-          </div>
-          <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:100px]">
-            <PrimaryButton>{dictionary.button}</PrimaryButton>
-          </div>
-        </form>
+        <Contact dictionary={dictionary} />
       </div>
       <div className="flex justify-between mt-8">
         <Image
