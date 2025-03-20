@@ -33,7 +33,7 @@ export default function TextInput<
         <div>
           <label
             htmlFor={name}
-            className="block text-sm/6 sm:text-lg/6 font-medium sm:font-semibold text-[#0A0A0A]"
+            className="block text-sm/6 sm:text-lg/6 font-medium sm:font-semibold text-[#0A0A0A] pb-2"
           >
             {label} {required && <span className="text-red-500">*</span>}
           </label>

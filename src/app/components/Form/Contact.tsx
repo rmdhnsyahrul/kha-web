@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { PrimaryButton } from "../button";
 import { getDictionary } from "@/get-dictionary";
 import * as yup from "yup";
@@ -8,6 +8,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import TextInput from "./TextInput";
 import { sendMail } from "@/lib/send-mail";
+import ReCAPTCHA from "react-google-recaptcha";
+
 export type FormData = {
   name?: string;
   email?: string;
@@ -20,6 +22,26 @@ export default function Contact({
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>["contact"];
 }) {
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isVerified, setIsVerified] = useState(false);
+
+  async function handleCaptchaSubmission(token: string | null) {
+    try {
+      if (token) {
+        await fetch("/api/recapthca", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ token }),
+        });
+        setIsVerified(true);
+      }
+    } catch (e) {
+      setIsVerified(false);
+    }
+  }
   const formSchema = yup.object().shape({
     name: yup.string().required(),
     email: yup.string().email(),
@@ -55,6 +77,14 @@ export default function Contact({
     }
   };
 
+  const handleChange = useCallback((token: string | null) => {
+    handleCaptchaSubmission(token);
+  }, []);
+
+  const handleExpired = useCallback(() => {
+    setIsVerified(false);
+  }, []);
+
   return (
     <form
       onSubmit={handleSubmit(onSubmitHandler)}
@@ -71,12 +101,20 @@ export default function Contact({
           name="jobTitle"
         />
         <TextInput label="Message" required control={control} name="message" />
+        <ReCAPTCHA
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+          ref={recaptchaRef}
+          onChange={handleChange}
+          onExpired={handleExpired}
+          className="border-none"
+        />
       </div>
       <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:100px]">
         <PrimaryButton
           disabled={
             Boolean(errors.name || errors.email || errors.message) ||
-            isSubmmited
+            isSubmmited ||
+            !isVerified
           }
         >
           {dictionary.button}
