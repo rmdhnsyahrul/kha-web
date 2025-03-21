@@ -9,6 +9,7 @@ import Faq from "../components/sections/Faq";
 import ContactUs from "../components/sections/ContactUs";
 import MainNavigation from "../components/main-navigation";
 import Footer from "../components/sections/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 export default async function IndexPage(props: {
   params: Promise<{ lang: Locale }>;
@@ -30,6 +31,7 @@ export default async function IndexPage(props: {
         <ContactUs dictionary={dictionary.contact} />
       </main>
       <Footer dictionary={dictionary.footer} />
+      <Toaster />
     </>
   );
 }

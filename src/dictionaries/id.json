@@ -89,7 +89,11 @@
     "email": "Email",
     "company": "Nama Perusahaan",
     "job": "Jabatan",
-    "message": "Pesan"
+    "message": "Pesan",
+    "success-title": "Data anda berhasil terkirim!",
+    "success-description": "Kami akan menghubungi anda secepatnya!",
+    "error-title": "Data and gagal terkirim!",
+    "error-description": "Silahkan coba lagi beberapa saat lagi!"
   },
   "footer": {
     "information": "Informasi",

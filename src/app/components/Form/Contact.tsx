@@ -9,6 +9,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import TextInput from "./TextInput";
 import { sendMail } from "@/lib/send-mail";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useToast } from "@/hooks/use-toast";
 
 export type FormData = {
   name?: string;
@@ -24,6 +25,7 @@ export default function Contact({
 }) {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [isVerified, setIsVerified] = useState(false);
+  const { toast } = useToast();
 
   async function handleCaptchaSubmission(token: string | null) {
     try {
@@ -72,7 +74,17 @@ export default function Contact({
 
       setIsSubmitted(true);
       reset();
+
+      toast({
+        title: dictionary["success-title"],
+        description: dictionary["success-description"],
+      });
     } catch (e) {
+      toast({
+        title: dictionary["error-title"],
+        description: dictionary["error-description"],
+        variant: "destructive",
+      });
       console.info(JSON.stringify(e));
     }
   };
