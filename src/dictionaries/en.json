@@ -93,7 +93,8 @@
     "success-title": "Your form successfully submitted!",
     "success-description": "We will notify you soon!",
     "error-title": "Failed submit your data!",
-    "error-description": "Something went wrong! Please try again later!"
+    "error-description": "Something went wrong! Please try again later!",
+    "sending": "Sending..."
   },
   "footer": {
     "information": "Information",

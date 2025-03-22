@@ -62,9 +62,11 @@ export default function Contact({
   });
 
   const [isSubmmited, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+
   const onSubmitHandler = async (values: FormData) => {
     const mailText = `Name: ${values.name}\n  Email: ${values.email}\n Company: ${values.company}\n Job Title: ${values.jobTitle}\n Message: ${values.message}`;
-
+    setIsSending(true);
     try {
       await sendMail({
         email: values.email as string,
@@ -85,8 +87,8 @@ export default function Contact({
         description: dictionary["error-description"],
         variant: "destructive",
       });
-      console.info(JSON.stringify(e));
     }
+    setIsSending(false);
   };
 
   const handleChange = useCallback((token: string | null) => {
@@ -121,17 +123,17 @@ export default function Contact({
           className="border-none"
         />
       </div>
-      <div className="animate-fade-in [animation-timeline:view()] [animation-range-start:cover] [animation-range-end:100px]">
-        <PrimaryButton
-          disabled={
-            Boolean(errors.name || errors.email || errors.message) ||
-            isSubmmited ||
-            !isVerified
-          }
-        >
-          {dictionary.button}
-        </PrimaryButton>
-      </div>
+      <PrimaryButton
+        loadingTitle={dictionary.sending}
+        loading={isSending}
+        disabled={
+          Boolean(errors.name || errors.email || errors.message) ||
+          isSubmmited ||
+          !isVerified
+        }
+      >
+        {dictionary.button}
+      </PrimaryButton>
     </form>
   );
 }
