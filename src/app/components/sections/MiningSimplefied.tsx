@@ -92,7 +92,7 @@ export default function MiningSimplefied({
           />
           <div className="relative col-1">
             <Image
-              src={"./images/kha-potrait-4x.png"}
+              src={khaLogo}
               width={100}
               height={100}
               alt=""
