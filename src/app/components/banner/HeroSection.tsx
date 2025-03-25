@@ -29,14 +29,16 @@ export default function HeroSection({
         />
       </div>
       <div className="flex items-center h-screen">
-        <div className="w-[80%] sm:pl-[80px] sm:pt-[100px] pl-8 relative">
-          <h5 className="sm:text-[60px]/[72px] font-bold text-white mb-6 text-[40px]/[52px] motion-preset-slide-left motion-duration-[1s] motion-ease-spring-smooth uppercase">
-            {dictionary["title-1"]}
-          </h5>
-          <p className="sm:text-[26px]/[32px] text-white font-light text-lg motion-preset-slide-right-sm motion-duration-[2s] motion-ease-spring-smooth">
+        <div className="max-[413px]:w-[100%] w-[80%] sm:pl-[80px] sm:pt-[100px] pl-8 max-[413px]:px-4 relative">
+          <div className="">
+            <h3 className="sm:text-[60px]/[72px] font-bold text-white mb-6 max-[413px]:mb-4 text-[40px]/[52px] motion-preset-slide-left motion-duration-[1s] motion-ease-spring-smooth uppercase max-[413px]:line-clamp-5 max-[413px]:text-ellipsis">
+              {dictionary["title-1"]}
+            </h3>
+          </div>
+          <p className="sm:text-[26px]/[32px] text-white font-light text-lg motion-preset-slide-right-sm motion-duration-[2s] motion-ease-spring-smooth max-[413px]:line-clamp-5">
             {dictionary["desc-1"]}
           </p>
-          <div className="flex gap-4 mt-[40px]">
+          <div className="flex gap-4 mt-[40px] max-[413px]:mt-8 ">
             <Link href={"#about-us"}>
               <PrimaryButton>{dictionary["learn-more"]}</PrimaryButton>
             </Link>
