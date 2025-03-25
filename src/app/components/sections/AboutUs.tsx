@@ -32,7 +32,7 @@ export default function AboutUs({
             </span>
           </p>
           <PrimaryButton>
-            <Link href={"#"}>Know More</Link>
+            <Link href={"#our-technology"}>{dictionary["know-more"]}</Link>
           </PrimaryButton>
         </section>
         <div className="sm:w-1/2 sm:block hidden">
