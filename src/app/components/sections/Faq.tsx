@@ -12,7 +12,7 @@ export default function Faq({
 }) {
   return (
     <section
-      className="p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6] scroll-mt-40 sm:scroll-mt-14"
+      className="p-5 sm:py-[64px] sm:px-[80px] bg-[#F6F6F6] scroll-mt-20 sm:scroll-mt-14"
       id="faq"
     >
       <SectionTitle>FAQ</SectionTitle>
