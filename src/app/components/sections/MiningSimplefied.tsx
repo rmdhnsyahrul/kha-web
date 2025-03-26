@@ -10,7 +10,7 @@ import icCost from "../../../../public/images/ic-cost-effective.svg";
 import icMineral from "../../../../public/images/ic-mineral-extraction.svg";
 import icHauling from "../../../../public/images/ic-hauling.svg";
 import icBarging from "../../../../public/images/ic-barging.svg";
-import khaLogo from "../../../../public/images/kha-potrait-4x.png";
+import khaLogo from "../../../../public/images/2.png";
 import dotCorner from "../../../../public/images/dot-corner-5x5.png";
 import { getDictionary } from "@/get-dictionary";
 

@@ -3,7 +3,7 @@ import SectionTitle from "../typography/SectionTitle";
 import Image from "next/image";
 import { getDictionary } from "@/get-dictionary";
 import dotBlue from "../../../../public/images/dot-corner-5x5-blue.svg";
-import khaPotrait from "../../../../public/images/kha-potrait-4x.png";
+import khaPotrait from "../../../../public/images/2.png";
 import Contact from "../Form/Contact";
 
 export default function ContactUs({
